@@ -1,27 +1,26 @@
 /*  your css code here. If applicable */
-/* Container Styling */
+/* Apply a margin to the container */
 #container {
-    margin: 20px;
-    padding: 20px;
-    background-color: #e0e0e0;
-    font-size: 18px;
-    text-align: center;
+  margin: 20px;
+  padding: 10px;  /* Optional, for better layout visibility */
+  background-color: #f5f5f5; /* Optional, to distinguish the container */
 }
 
-/* Pseudo-element Before */
+/* Insert content before the container using ::before pseudo-element */
 #container::before {
-    content: "Before content: ";
-    color: #f00; /* Red color */
-    font-size: 20px;
-    display: block; /* Ensure it appears above the content */
-    margin-bottom: 10px; /* Space between before content and main content */
+  content: "Before Content";  /* Text to display before the container */
+  color: #f00;  /* Red color */
+  font-size: 20px;  /* Font size for the inserted text */
+  display: block;  /* Make the text appear on its own line */
+  margin-bottom: 10px;  /* Space between the inserted text and container */
 }
 
-/* Pseudo-element After */
+/* Insert content after the container using ::after pseudo-element */
 #container::after {
-    content: " After content";
-    color: #f00; /* Red color */
-    font-size: 20px;
-    display: block; /* Ensure it appears below the content */
-    margin-top: 10px; /* Space between main content and after content */
+  content: "After Content";  /* Text to display after the container */
+  color: #f00;  /* Red color */
+  font-size: 20px;  /* Font size for the inserted text */
+  display: block;  /* Make the text appear on its own line */
+  margin-top: 10px;  /* Space between the container and inserted text */
 }
+
